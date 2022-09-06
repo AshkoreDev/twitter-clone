@@ -3,6 +3,7 @@
 	--black-color: #000000;
 	--grey-color: #3c4043;
 	--white-color: #FFFFFF;
+	--button-color: #dadce0;
 }
 
 * {
@@ -19,11 +20,11 @@
 }
 
 .login__section {
-	padding: 20px;
+	padding: 35px;
 }
 
 .login__logoContainer {
-	height: 100px;
+	height: 70px;
 	padding: 5px 5px 0;
 }
 
@@ -33,10 +34,16 @@
 }
 
 .login--title {
+	margin: 30px auto;
 	font-size: 38px;
+	font-weight: 700;
+	line-height: 49px;
+	letter-spacing: -0.8px;
+	word-wrap: break-word;
 }
 
 .login--subtitle {
+	margin: 20px 0;
 	font-size: 22px;
 }
 
@@ -46,8 +53,8 @@
 }
 
 .button {
-	width: 280px;
-	padding: 8px;
+	width: 100%;
+	padding: 10px;
 	gap: 10px;
 	display: flex;
 	align-items: center;
@@ -59,7 +66,7 @@
 	border-radius: 20px;
 	white-space: nowrap;
 	user-select: none;
-	border: 1px solid var(--grey-color);
+	border: 1px solid var(--button-color);
 	background-color: var(--white-color);
 }
 
@@ -74,4 +81,60 @@
 
 .login__sectionButtons--buttonTwo {
 	color: var(--primary-color);
+}
+
+.login__sectionButtons--middle {
+	position: relative;
+}
+
+.login__sectionButtons--middle::before {
+	content: "";
+	width: 135px;
+	height: 2px;
+	position: absolute;
+	top: calc(100% - 8px);
+	left: calc(100% - 150px);
+	background: var(--button-color);
+}
+
+.login__sectionButtons--middle::after {
+	content: "";
+	width: 135px;
+	height: 2px;
+	position: absolute;
+	top: calc(100% - 8px);
+	right: calc(100% - 150px);
+	background: var(--button-color);
+}
+
+.login__sectionButtons--pOne {
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.login__sectionButtons--p {
+	margin: 10px 0 50px;
+	font-size: 14px;
+	text-align: justify-all;
+}
+
+.login__sectionButtons--item {
+	color: var(--primary-color);
+}
+
+footer {
+	padding: 20px;
+	gap: 12px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	color: var(--grey-color);
+	word-wrap: break-word;
+}
+
+.footer--item {
+	padding-bottom: 2px;
+	border-bottom: 1px solid transparent;
 }

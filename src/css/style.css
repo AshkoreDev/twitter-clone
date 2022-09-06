@@ -1,0 +1,77 @@
+:root {
+	--primary-color: #1d9bf0;
+	--black-color: #000000;
+	--grey-color: #3c4043;
+	--white-color: #FFFFFF;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.flex {
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.login__section {
+	padding: 20px;
+}
+
+.login__logoContainer {
+	height: 100px;
+	padding: 5px 5px 0;
+}
+
+.login__logoContainer img {
+	width: 45px;
+	height: 45px;
+}
+
+.login--title {
+	font-size: 38px;
+}
+
+.login--subtitle {
+	font-size: 22px;
+}
+
+.login__sectionButtons {
+	width: 300px;
+	/*background: green;*/
+}
+
+.button {
+	width: 280px;
+	padding: 8px;
+	gap: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: 0.25px;
+	border-radius: 20px;
+	white-space: nowrap;
+	user-select: none;
+	border: 1px solid var(--grey-color);
+	background-color: var(--white-color);
+}
+
+.login__sectionButtons--button:first-child {
+	color: var(--grey-color);
+}
+
+.login__sectionButtons--buttonOne {
+	color: var(--white-color);
+	background: var(--primary-color);
+}
+
+.login__sectionButtons--buttonTwo {
+	color: var(--primary-color);
+}

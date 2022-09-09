@@ -16,7 +16,7 @@ html {
 	font-size: 62.5%;
 }
 
-.flex {
+.flex-column {
 	gap: 20px;
 	display: flex;
 	flex-direction: column;
@@ -174,5 +174,32 @@ footer {
 		cursor: pointer;
 		opacity: 0.8;
 		border-color: var(--primary-color);
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.flex {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.login__section {
+		width: 500px;
+	}
+
+	.background--image {
+		width: 268px;
+		height: 100vh;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.login__section {
+		width: 700px;
+	}
+
+	.background--image {
+		width: 568px;
+		height: 110vh;
 	}
 }

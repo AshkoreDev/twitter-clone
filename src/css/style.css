@@ -133,6 +133,9 @@ html {
 .background--image {
 	width: 100%;
 	height: 40vh;
+	justify-content: center;
+	background: url("https://abs.twimg.com/sticky/illustrations/lohp_850x623.png");
+	background-size: cover;
 }
 
 footer {

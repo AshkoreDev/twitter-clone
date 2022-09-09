@@ -12,6 +12,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	font-size: 62.5%;
+}
+
 .flex {
 	gap: 20px;
 	display: flex;
@@ -35,7 +39,7 @@
 
 .login--title {
 	margin: 30px auto;
-	font-size: 38px;
+	font-size: 4rem;
 	font-weight: 700;
 	line-height: 49px;
 	letter-spacing: -0.8px;
@@ -44,7 +48,7 @@
 
 .login--subtitle {
 	margin: 20px 0;
-	font-size: 22px;
+	font-size: 2.2rem;
 }
 
 .login__sectionButtons {
@@ -52,18 +56,19 @@
 }
 
 .button {
-	width: 100%;
+	width: 300px;
+	height: 40px;
 	padding: 10px;
 	gap: 10px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 14px;
-	font-weight: 600;
+	font-size: 1.6rem;
+	font-weight: 700;
 	text-align: center;
 	letter-spacing: 0.25px;
 	border-radius: 20px;
-	white-space: nowrap;
+	/*white-space: nowrap;*/
 	user-select: none;
 	border: 1px solid var(--button-color);
 	background-color: var(--white-color);
@@ -74,6 +79,9 @@
 }
 
 .login__sectionButtons--buttonOne {
+	overflow: hidden;
+	/*white-space: nowrap;*/
+	text-overflow: ellipsis;
 	color: var(--white-color);
 	background: var(--primary-color);
 }
@@ -107,13 +115,12 @@
 }
 
 .login__sectionButtons--pOne {
-	margin-bottom: 20px;
 	font-weight: bold;
 }
 
 .login__sectionButtons--p {
 	margin: 10px 0 50px;
-	font-size: 14px;
+	font-size: 1.4rem;
 	text-align: justify-all;
 }
 
@@ -123,6 +130,11 @@
 	border-bottom: 1px solid transparent;
 }
 
+.background--image {
+	width: 100%;
+	height: 40vh;
+}
+
 footer {
 	padding: 20px;
 	gap: 12px;
@@ -130,7 +142,7 @@ footer {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	font-size: 14px;
+	font-size: 1.4rem;
 	color: var(--grey-color);
 	word-wrap: break-word;
 }

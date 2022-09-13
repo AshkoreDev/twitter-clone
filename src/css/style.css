@@ -16,6 +16,9 @@ html {
 	font-size: 62.5%;
 }
 
+main {
+	justify-content: space-between;
+}
 .flex-column {
 	gap: 20px;
 	display: flex;
@@ -26,10 +29,8 @@ html {
 /*Loader*/
 .loader {
 	height: 100%;
-	position: absolute;
-  z-index: 3;
-  background-color: #fff;
-  animation: loader 2s linear forwards;
+	background-color: #fff;
+	animation: loader 2s linear forwards;
 }
 
 @keyframes loader {
@@ -47,8 +48,6 @@ html {
 /*Login*/
 .login__section {
 	padding: 20px;
-	position: absolute;
-  z-index: 1;
 }
 
 .login__logoContainer {
@@ -222,7 +221,7 @@ footer {
 	}
 
 	.background--image {
-		width: 568px;
+		width: 60%;
 		height: 110vh;
 	}
 }

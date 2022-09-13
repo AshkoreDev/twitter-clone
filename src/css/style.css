@@ -16,33 +16,11 @@ html {
 	font-size: 62.5%;
 }
 
-main {
-	justify-content: space-between;
-}
 .flex-column {
 	gap: 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
-
-/*Loader*/
-.loader {
-	height: 100%;
-	background-color: #fff;
-	animation: loader 2s linear forwards;
-}
-
-@keyframes loader {
-  0%,
-  95% {
-    opacity: 1;
-    visibility: visible;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
 }
 
 /*Login*/
@@ -72,7 +50,7 @@ main {
 
 .login--subtitle {
 	width: 300px;
-	margin: 20px auto;
+	margin: 50px auto;
 	font-size: 2.2rem;
 }
 
@@ -204,11 +182,13 @@ footer {
 		display: flex;
 		flex-direction: row-reverse;
 	}
-
 	.login__section {
 		width: 500px;
 	}
-
+	.login--title {
+		width: 100%;
+		text-align: center;
+	}
 	.background--image {
 		width: 268px;
 		height: 100vh;
@@ -217,11 +197,10 @@ footer {
 
 @media screen and (min-width: 1024px) {
 	.login__section {
-		width: 700px;
+		width: 45%;
 	}
-
 	.background--image {
-		width: 60%;
+		width: 55%;
 		height: 110vh;
 	}
 }

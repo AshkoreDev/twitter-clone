@@ -200,6 +200,7 @@ footer {
 
 @media screen and (min-width: 1024px) {
 	.login__section {
+		padding-top: 50px;
 		width: 45%;
 	}
 	.background--image {

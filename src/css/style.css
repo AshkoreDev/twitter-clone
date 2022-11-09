@@ -23,8 +23,32 @@ html {
 	align-items: center;
 }
 
+/*Loader*/
+.loader {
+	height: 100%;
+	position: absolute;
+  z-index: 3;
+  background-color: #fff;
+  animation: loader 2s linear forwards;
+}
+
+@keyframes loader {
+  0%,
+  95% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/*Login*/
 .login__section {
 	padding: 20px;
+	position: absolute;
+  z-index: 1;
 }
 
 .login__logoContainer {
